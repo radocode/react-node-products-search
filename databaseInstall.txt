@@ -1,0 +1,11 @@
+por homebrew
+
+brew install mysql
+brew tap homebrew/services
+brew services start mysql
+mysqladmin -u root password 'prueba'
+
+por docker:
+
+docker pull mysql/mysql-server
+docker run --name=mysql1 -d mysql/mysql-server
